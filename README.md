@@ -42,6 +42,10 @@ In order to build locally,
 The build is also automated via Travis.  You can see the results of it [here](https://travis-ci.org/bowlofstew/cpp-elasticsearch)
 
 
+## Present Build Status
+
+[![Build Status](https://travis-ci.org/bowlofstew/cpp-elasticsearch.svg?branch=master)](https://travis-ci.org/bowlofstew/cpp-elasticsearch)
+
 
 ## Dependencies
 
