@@ -1,5 +1,6 @@
 project(cpp-elasticsearch)
 cmake_minimum_required(VERSION 2.8.7 FATAL_ERROR)
+
 include(CheckCXXCompilerFlag)
 CHECK_CXX_COMPILER_FLAG("-std=c++11" COMPILER_SUPPORTS_CXX11)
 CHECK_CXX_COMPILER_FLAG("-std=c++0x" COMPILER_SUPPORTS_CXX0X)
@@ -10,6 +11,7 @@ elseif(COMPILER_SUPPORTS_CXX0X)
 else()
     message(STATUS "The compiler ${CMAKE_CXX_COMPILER} has no C++11 support. Please use a different C++ compiler.")
 endif()
+
 include_directories(
     src/elasticsearch
     src/http
@@ -20,3 +22,4 @@ file(GLOB SOURCES src/elasticsearch/elasticsearch.cpp
                   src/json/json.cpp
         )
 add_library(cpp-elasticsearch ${SOURCES})
+add_subdirectory(example/getstarted)
