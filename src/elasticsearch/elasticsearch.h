@@ -7,8 +7,8 @@
 #include <mutex>
 #include <vector>
 
-#include "http/http.h"
-#include "json/json.h"
+#include "http.h"
+#include "json.h"
 
 /// API class for elastic search server.
 /// Node: Instance of elastic search on server represented by url:port
